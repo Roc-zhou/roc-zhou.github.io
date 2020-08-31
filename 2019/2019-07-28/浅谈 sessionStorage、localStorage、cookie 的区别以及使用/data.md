@@ -1,0 +1,79 @@
+### 1、sessionStorage、localStorage、cookie 之间的区别
+
+> 相同点
+
+- cookie 和 webStorage 都是用来存储客户端的一些信息 
+
+------
+
+> 不同点
+
+#### localStorage
+
+>localStorage 的生命周期是 永久的。也就是说 只要不是 手动的去清除。localStorage 会一直存储
+
+#### sessionStorage
+
+> 相反 sessionStorage 的生命周期 只是 临时的 。只要是 当前的 窗口 或者 标签页 关闭话 就会 自动清除。当然这里面 涉及到  `同源策略`  的问题。
+
+#### cookie
+
+> 相对于 cookie 类似于 localStorage 但是又不完全 相同。cookie 是可以 设置 一个 过期时间。关闭浏览器后cookie 还是 存在的 。它会一直等到时间过期才会 销毁。但是 cookie 会有 一个 大小的 限制。不同于sessionStorage、localStorage（一般是5M）但是 cookie （4k左右）不同浏览器也是不同的。
+>
+> 最重要的一点 cookie 存储 会出现 安全上的 问题。因为 cookie 会 传给服务器的。
+>
+> 慎用之 
+
+### 2、sessionStorage、localStorage、cookie 简单的使用方法
+
+#### sessionStorage、localStorage 使用
+
+```js
+localStorage和sessionStorage使用时使用相同的API 在这用 sessionStorage 举例
+
+1、设置一个值
+sessionStorage.setItem('key','value')
+2、获取一个值
+sessionStorage.getItem('key')
+3、删除一个值
+sessionStorage.removeItem("key");
+4、清空
+localStorage.clear(); // 清除数据--删除所有同源的本地存储的localStorage数据
+sessionStorage.clear();//清除数据---只清空当前会话存储的数据
+```
+
+#### cookie 的使用
+
+```js
+1、设置 cookie 值的函数
+function setCookie(cname,cvalue,exdays)
+{
+  var d = new Date();
+  d.setTime(d.getTime()+(exdays*24*60*60*1000));
+  var expires = "expires="+d.toGMTString();
+  document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+2、获取 cookie 值的函数
+function getCookie(cname)
+{
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0; i<ca.length; i++) 
+  {
+    var c = ca[i].trim();
+    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+  }
+  return "";
+}
+3、删除 cookie 
+function delCookie(name) {
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null)
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+
+```
+
+本文结束 这里只是 sessionStorage、localStorage、cookie 这三者的 一些 简单的 知识。如有不对，请指正
