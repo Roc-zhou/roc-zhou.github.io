@@ -10,7 +10,7 @@ Model 代表数据模型、View代表Ui组件、ViewModel是 他们两个的桥�
 
 每一个组件实例都对应一个 watcher 实例，当 setter 触发时会通知watcher，然后重新渲染
 
-![image-20200923203044435](/Users/zhouhaipeng/Library/Application Support/typora-user-images/image-20200923203044435.png)
+![image-20200923203044435.png](https://upload-images.jianshu.io/upload_images/9419407-c61428b8f029e9a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### vue2的生命周期
 
@@ -20,7 +20,7 @@ beforeCreate/created、beforeMount/mounted、beforeUpdate/updated、beforeDestro
 
 beforeCreate 阶段是不能访问 data、methods、computed 和 watch 上的 数据的 ！
 
-![image-20200923214641670](/Users/zhouhaipeng/Library/Application Support/typora-user-images/image-20200923214641670.png)
+![image-20200923214641670.png](https://upload-images.jianshu.io/upload_images/9419407-f9b0b9416a23ab80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### computed 和 watch 的区别
 
