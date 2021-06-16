@@ -19,7 +19,10 @@ jobs:
           
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
-          
+      
+      - name: Move file
+        run: |
+          mv main.go /opt/hostedtoolcache/go/src/
       - name: Lint Go Code
         run: |
           # export PATH=$PATH:$(go env GOPATH)/bin  # See https://github.com/actions/setup-go/issues/14
