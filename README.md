@@ -1,5 +1,19 @@
-# blog
-个人博客
-这里只是记录资源文档，博客由go+gin实现
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Roc-zhou&layout=compact" />
 
-服务器资源有限，改为issues
+### Hi there 👋
+
+### Welcome 
+[My Blog](https://github.com/Roc-zhou/blog/issues)
+
+🌱 I’m currently learning Golang
+
+📚 The last article
+<!-- start -->
+- [简单理解浅拷贝和深拷贝](https://github.com/Roc-zhou/blog/issues/12)
+- [如何发布一个 npm 包](https://github.com/Roc-zhou/blog/issues/11)
+- [scp 服务器传输文件](https://github.com/Roc-zhou/blog/issues/10)
+- [vue 如何开启 gzip 压缩](https://github.com/Roc-zhou/blog/issues/9)
+- [关于node 日志记录操作！pm2-logrotate-ext](https://github.com/Roc-zhou/blog/issues/8)
+<!-- end -->
+
+
