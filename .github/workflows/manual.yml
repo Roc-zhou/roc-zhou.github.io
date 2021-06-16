@@ -22,10 +22,9 @@ jobs:
           
       - name: Lint Go Code
         run: |
-          export PATH=$PATH:$(go env GOPATH)/bin  # temporary fix. See https://github.com/actions/setup-go/issues/14
-      - name: go mod
-        run: |
-          go mod init
+          export PATH=$PATH:$(go env GOPATH)/bin  # See https://github.com/actions/setup-go/issues/14
+      - name: Go Mod
+        run: go mod tidy
           
       - name: Build
         run: go build -o app main.go
@@ -33,21 +32,21 @@ jobs:
       - name: Run
         run: ./app
 
-      - name: git config
+      - name: Git config
         run: |
           git config user.name ‘Roc-zhou’
           git config user.email ’roc.zhousir@gmaol.com’
 
-      - name: commit change
+      - name: Commit change
         run: |
           git checkout main
           git add .
           git commit -m "Update from Github Action"
-      - name: push
+      - name: Push
         env:
           GITHUB_LOGIN: Roc-zhou
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         run: |
           git push https://$GITHUB_LOGIN:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
-      - name: done
+      - name: Done
         run: echo 'done'
