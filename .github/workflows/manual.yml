@@ -70,7 +70,7 @@ jobs:
 
       - name: Move and Run
         run: |
-          mv ./app ./Roc-zhou
+          mv app /Roc-zhou
           chmod 777 app
           ./app
 
