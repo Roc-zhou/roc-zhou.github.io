@@ -9,12 +9,13 @@
 
 📚 The last article
 <!-- start -->
+- [测试 action](https://github.com/Roc-zhou/blog/issues/15)
 - [简单理解浅拷贝和深拷贝](https://github.com/Roc-zhou/blog/issues/12)
 - [如何发布一个 npm 包](https://github.com/Roc-zhou/blog/issues/11)
 - [scp 服务器传输文件](https://github.com/Roc-zhou/blog/issues/10)
 - [vue 如何开启 gzip 压缩](https://github.com/Roc-zhou/blog/issues/9)
-- [关于node 日志记录操作！pm2-logrotate-ext](https://github.com/Roc-zhou/blog/issues/8)
 <!-- end -->
+
 
 
 
