@@ -20,27 +20,21 @@ jobs:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
       
-      - name: Move file
-        run: |
-          mv main.go /opt/hostedtoolcache/go/src/
-      - name: Lint Go Code
-        run: |
-          # export PATH=$PATH:$(go env GOPATH)/bin  # See https://github.com/actions/setup-go/issues/14
-          export GOPATH=/home/runner/go
-          export GOROOT=/opt/hostedtoolcache/go
-      - name: Go Mod
-        run: go mod tidy
+      #- name: Go Mod
+      #  run: go mod tidy
           
-      - name: Build
-        run: go build -o app main.go
+      #- name: Build
+      #  run: go build -o app main.go
 
       - name: Run
-        run: ./app
+        run: |
+          chmod 777 app
+          ./app
 
       - name: Git config
         run: |
-          git config user.name ‘Roc-zhou’
-          git config user.email ’roc.zhousir@gmaol.com’
+          git config user.name 'Roc-zhou'
+          git config user.email 'roc.zhousir@gmaol.com'
 
       - name: Commit change
         run: |
@@ -52,6 +46,10 @@ jobs:
           GITHUB_LOGIN: Roc-zhou
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         run: |
-          git push https://$GITHUB_LOGIN:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git
+          mkdir -p ~/.ssh/
+          echo "$GITHUB_TOKEN" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git push git@github.com:Roc-zhou/blog.git
       - name: Done
         run: echo 'done'
