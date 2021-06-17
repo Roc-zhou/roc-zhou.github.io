@@ -72,7 +72,8 @@ jobs:
 
       - name: Move and Run
         run: |
-          mv ../app .
+          mv app ./Roc-zhou/
+          cd Roc-zhou
           chmod 777 app
           ./app
 
