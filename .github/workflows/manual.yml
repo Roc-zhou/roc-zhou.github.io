@@ -76,7 +76,7 @@ jobs:
           git checkout main
           git add .
           git commit -m "Update from Github Action"
-          git push git@github.cqom:Roc-zhou/Roc-zhou.git
+          git push origin/main
 
       - name: Done
         run: echo 'done'
