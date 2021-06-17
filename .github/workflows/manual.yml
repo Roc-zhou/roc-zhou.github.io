@@ -68,7 +68,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git clone git@github.com:Roc-zhou/Roc-zhou.git
-          cd Roc-zhou
 
       - name: Move and Run
         run: |
