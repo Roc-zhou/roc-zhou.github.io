@@ -53,6 +53,7 @@ jobs:
           git push git@github.com:Roc-zhou/blog.git
       - name: Done
         run: echo 'done'
+
   clone:
     name: Roc Build
     runs-on: ubuntu-latest
@@ -67,10 +68,11 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git clone git@github.com:Roc-zhou/Roc-zhou.git
+          cd Roc-zhou
 
       - name: Move and Run
         run: |
-          mv app /Roc-zhou
+          mv ../app .
           chmod 777 app
           ./app
 
