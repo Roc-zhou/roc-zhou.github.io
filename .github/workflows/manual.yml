@@ -22,8 +22,8 @@ jobs:
           cd Roc-zhou
           chmod 777 app
           ./app
-          git config user.name 'Roc-zhou'
-          git config user.email 'roc.zhousir@gmaol.com'
+          git config user.name Roc-zhou
+          git config user.email roc.zhousir@gmail.com
           git checkout main
           git add .
           git commit -m "Update from Github Action"
