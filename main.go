@@ -17,7 +17,7 @@ var replaceData string = "<!-- start -->\n"
 
 func getData() (string, error) {
 	client := &http.Client{}
-	req, _ := http.NewRequest("GET", "https://api.github.com/repos/Roc-zhou/blog/issues?page=1&per_page=5", nil)
+	req, _ := http.NewRequest("GET", "https://api.github.com/repos/Roc-zhou/roc-zhou.github.io/issues?page=1&per_page=5", nil)
 	res, err := client.Do(req)
 	if err != nil {
 		return "", err
