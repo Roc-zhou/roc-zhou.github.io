@@ -1,0 +1,75 @@
+.paddingTop {
+    padding: 64px 0 0 0 !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.centerBox {
+    width: 100%;
+    min-height: calc(100vh - 164px);
+}
+
+footer {
+    width: 100%;
+    background: #121212;
+    min-height: 100px;
+}
+
+footer > div {
+    padding: 20px 0;
+}
+
+footer a {
+    color: #93a6af;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+body {
+    background-color: #000;
+    color: #fff !important;
+}
+
+/*@media screen and (max-width: 800px) {*/
+/*    .links {*/
+/*        display: none !important;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 800px) {*/
+/*    .btnMenu {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+.links a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: rgba(255, 255, 255, .7);
+    text-decoration: underline;
+}
+
+nav {
+    background: #121212;
+    height: 64px;
+    width: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+::selection {
+    background: #ff393a;
+    color: #fff;
+}
+.logoHref {
+
+}

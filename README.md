@@ -1,3 +1,3 @@
 This Is My Blog!
 
-[Blog]()
+[Blog](https://roc-zhou.github.io/)
