@@ -42,11 +42,7 @@
       }
     }
 
-    window.onhashchange = function(event) {
-      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-        location.reload()
-      }
-    }
+    
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -61,7 +57,7 @@
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
     const href = location.href
-    const id = href.match(/#.+\?/)
+    const id = href.match(/#.+\??/)
     const gitalk = new Gitalk({
       clientID: 'fa213252a414624d7312',
       clientSecret: '4d870243d25fca3621f0deb4e7913b3d042eadfe',
@@ -72,6 +68,12 @@
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
+
+    window.onhashchange = function(event) {
+      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+        location.reload()
+      }
+    }
   </script>
 </body>
 </html>
