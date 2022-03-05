@@ -21,6 +21,7 @@
       auto2top: true,
       homepage: 'home.md',
       loadSidebar: true,
+      autoHeader: true,
       subMaxLevel: 4,
       mergeNavbar: true,
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
@@ -59,7 +60,7 @@
       repo: 'roc-zhou.github.io',
       owner: 'Roc-zhou',
       admin: ['Roc-zhou'],
-      id: decodeURI(location.hash),
+      id: document.title,
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
