@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon" />
+  <title>roc-zhou的个人博客</title>
+  <meta name="author" content="@AB+">
+  <meta name="keywords" content="Roc-zhou,blog">
+  <meta name="description" content="roc-zhou的个人博客">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <style>
+    header {
+      padding: 5em 3em;
+      text-align: center;
+    }
+
+    .b1 {
+      background: #121212;
+      padding: 3em 0;
+    }
+
+    .b2 {
+      margin: 30px 0 !important;
+    }
+
+    .b2LinkBox>div {
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    .b2LinkBox>div>a {
+      width: 100%;
+      padding: 2.5em;
+      background: #121212;
+      color: #fff;
+      border-radius: 2px;
+      border-top: 4px solid;
+      border-top-color: #fbdd51;
+    }
+
+    .b2LinkBox>div>a:hover {
+      background: #292929;
+      transform: translateY(-1px);
+      transition: .5s;
+      text-decoration: none;
+    }
+
+    .headImg {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+
+    @media screen and (min-width: 800px) {
+      h5 {
+        font-size: 30px;
+      }
+    }
+
+    .userinfo {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid paddingTop">
+    <nav class="nav fixed-top justify-content-center ">
+      <div class="container-lg row justify-content-between align-items-center">
+        <a href="/" class="logoHref">
+          <h1 style="font-size: 1.5rem">Roc-zhou</h1>
+        </a>
+        <div class="col-auto links row justify-content-end align-items-center">
+          <a href="https://github.com/Roc-zhou/roc-zhou.github.io/issues" target="_blank" title="博客">博客</a>
+          <a href="/about" title="关于">关于</a>
+          <a href="https://github.com/Roc-zhou" title="Github">
+            <svg t="1598583583195" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              p-id="2635" width="30" height="30">
+              <path
+                d="M512 85.333333C276.266667 85.333333 85.333333 276.266667 85.333333 512a426.410667 426.410667 0 0 0 291.754667 404.821333c21.333333 3.712 29.312-9.088 29.312-20.309333 0-10.112-0.554667-43.690667-0.554667-79.445333-107.178667 19.754667-134.912-26.112-143.445333-50.133334-4.821333-12.288-25.6-50.133333-43.733333-60.288-14.933333-7.978667-36.266667-27.733333-0.554667-28.245333 33.621333-0.554667 57.6 30.933333 65.621333 43.733333 38.4 64.512 99.754667 46.378667 124.245334 35.2 3.754667-27.733333 14.933333-46.378667 27.221333-57.045333-94.933333-10.666667-194.133333-47.488-194.133333-210.688 0-46.421333 16.512-84.778667 43.733333-114.688-4.266667-10.666667-19.2-54.4 4.266667-113.066667 0 0 35.712-11.178667 117.333333 43.776a395.946667 395.946667 0 0 1 106.666667-14.421333c36.266667 0 72.533333 4.778667 106.666666 14.378667 81.578667-55.466667 117.333333-43.690667 117.333334-43.690667 23.466667 58.666667 8.533333 102.4 4.266666 113.066667 27.178667 29.866667 43.733333 67.712 43.733334 114.645333 0 163.754667-99.712 200.021333-194.645334 210.688 15.445333 13.312 28.8 38.912 28.8 78.933333 0 57.045333-0.554667 102.912-0.554666 117.333334 0 11.178667 8.021333 24.490667 29.354666 20.224A427.349333 427.349333 0 0 0 938.666667 512c0-235.733333-190.933333-426.666667-426.666667-426.666667z"
+                fill="#ffffff" p-id="2636"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- 首页内容 -->
+    <div class="home centerBox">
+      <header>
+        <h1 style="color: #ff393a;font-size: 4em">Welcome</h1>
+        <h3 id="dayEn"></h3>
+        <h3 id="dayCn"></h3>
+      </header>
+      <main>
+        <section class="b1">
+          <div class="container-lg">
+            <div class="row justify-content-around align-items-center userinfo">
+              <div class="col-md-6 row justicy-content-center align-self-center align-items-start flex-column flex-wrap"
+                style="margin-bottom: 30px">
+                <h5>欢迎来到我的博客，本人是一名前端程序员。热情关注 JavaScript，NodeJs，Go，Vue 技术，对开源技术很感兴趣。</h5>
+                <h5 style="margin-top: 20px">
+                  <span>可以通过 👉 </span>
+                  <a href="https://github.com/Roc-zhou" rel="noopener noreferrer" target="_blank">GITHUB</a>
+                  <span>找到我❤️</span>
+                </h5>
+              </div>
+              <div class="col-md-4 justify-content-center row">
+                <img src="./assets/images/head.jpg" alt="head" class="headImg">
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section class="b2 row justify-content-center">
+          <div class="container-lg">
+            <h3 class="row justify-content-center">开源</h3>
+            <h4 class="row justify-content-center" style="color: rgba(255, 255, 255, .4);margin-top: 10px">
+              开放的源码项目</h4>
+            <div class="row b2LinkBox flex-wrap" style="margin-top: 30px;">
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/go-util-package" rel="noopener noreferrer" target="_blank"
+                  title="go-util-package" style="border-top-color: #88ff3b;">
+                  <h4>go-util-package</h4>
+                  <p>Go 常用方法封装（微信的签名、加密解密、时间、发送邮件等）✊</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/go-util-package.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/go-util-package.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/rz-ui" rel="noopener noreferrer" target="_blank" title="rz-ui">
+                  <h4>rz-ui</h4>
+                  <p>flex布局全局css类，使用它你可以很轻松快速的处理你的css布局 😎</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/rz-ui.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/rz-ui.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/methods" rel="noopener noreferrer" target="_blank"
+                  title="rz-methods" class="">
+                  <h4>rz-methods</h4>
+                  <p>开发常用js方法封装（如：判断浏览器、格式化日期、时间戳等）⌨️</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/methods.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/methods.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/rz-des" rel="noopener noreferrer" target="_blank" title="rz-des"
+                  class="">
+                  <h4>rz-des</h4>
+                  <p>使用crypto包封装nodejs中的加密解密方法，实现传输数据的加密解密 👏</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/rz-des.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/rz-des.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/rz-vue-excel" rel="noopener noreferrer" target="_blank"
+                  title="rz-vue-excel" class="">
+                  <h4>rz-vue-excel</h4>
+                  <p>基于vue实现导出excel表格功能(使用到文件 Blob.js Export2Excel.js) 💡</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/rz-vue-excel.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/rz-vue-excel.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              <div class="col-md-4 row justify-content-start">
+                <a href="https://github.com/Roc-zhou/rz-mysql" rel="noopener noreferrer" target="_blank"
+                  title="rz-mysql" class="">
+                  <h4>rz-mysql</h4>
+                  <p>对nodeJs操作mysql基于mysql包（^2.17.1）统一操作方法封装！🔑</p>
+                  <p>
+                    <img src="https://img.shields.io/github/stars/Roc-zhou/rz-mysql.svg?style=social" alt="">
+                    <img src="https://img.shields.io/github/forks/Roc-zhou/rz-mysql.svg?style=social" alt="">
+                  </p>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="row justify-content-center">
+      <div class="row container-lg align-items-center justify-content-between flex-wrap">
+        <a href="/" class="logoHref">
+          <h1>Roc-zhou</h1>
+        </a>
+        <div>
+          <a href="/blog" title="博客">博客</a>
+          <a href="/about" title="关于">关于</a>
+          <a href="https://github.com/Roc-zhou" title="Github">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

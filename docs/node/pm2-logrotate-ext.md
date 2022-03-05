@@ -11,11 +11,11 @@ pm2-logrotate-ext 就是 在 pm2-logrotate的基础上 修改了pm2-logrotate �
 [pm2-logrotate-ext](https://github.com/Lujo5/pm2-logrotate-ext)
 
 ### 安装 pm2-logrotate-ext 首先你要先安装 pm2 
-```sh
+```shell
 pm2 install pm2-logrotate-ext
 ```
 ### 配制
-```sh
+```shell
 max_size（默认为10M）：当文件大小大于此值时，它将旋转它（工作人员可能在实际超过限制后检查文件）。您可以在随后结束指定单位：10G，10M，10K
 retain（默认为30文件日志）：此数字是一次保留的循环日志的数量，这意味着如果保留= 7，则最多将有7个循环日志和当前的日志。
 compress（默认为false）：通过gzip为所有旋转的日志启用压缩
@@ -27,12 +27,12 @@ TZ（默认为系统时间）：这是用于偏移已保存日志文件的标准
 forced（默认为true）：在上启用或禁用强制轮播rotateInterval，如果设置为false，则仅在max_size达到限制时才会发生日志文件轮换。
 ```
 ### 如何设置这些值
-```sh
+```shell
 pm2 set pm2-logrotate-ext:<param> <value>
 ```
 
 ### 个人设置
-```sh
+```shell
 pm2 set pm2-logrotate-ext:max_size 100M
 pm2 set pm2-logrotate-ext:retain 7
 pm2 set pm2-logrotate-ext:compress false
