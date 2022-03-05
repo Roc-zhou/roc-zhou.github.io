@@ -41,6 +41,12 @@
         hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容
       }
     }
+
+    window.onhashchange = function(event) {
+      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+        location.reload()
+      }
+    }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -54,22 +60,18 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
+    const href = location.href
+    const id = href.match(/#.+\?/)
     const gitalk = new Gitalk({
       clientID: 'fa213252a414624d7312',
       clientSecret: '4d870243d25fca3621f0deb4e7913b3d042eadfe',
       repo: 'roc-zhou.github.io',
       owner: 'Roc-zhou',
       admin: ['Roc-zhou'],
-      id: document.title,
+      id: decodeURI(id[0]).replace('?',''),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
-
-    window.onhashchange = function(event) {
-      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-        location.reload()
-      }
-    }
   </script>
 </body>
 </html>
