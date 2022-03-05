@@ -59,10 +59,16 @@
       repo: 'roc-zhou.github.io',
       owner: 'Roc-zhou',
       admin: ['Roc-zhou'],
-      id: location.pathname,
+      id: decodeURI(location.hash),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
+
+    window.onhashchange = function(event) {
+      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+        location.reload()
+      }
+    }
   </script>
 </body>
 </html>
