@@ -1,7 +1,9 @@
-# 个人博客
-> Youth means limitless possibilities.年轻就是无限的可能。
+# 个人博客 <!-- {docsify-ignore-all} -->
+> Youth means limitless possibilities.
+> 
+> 年轻就是无限的可能。
 
-博客记录日常问题的总结归纳 要善用搜索和 ctrl+f 哦！
+博客记录日常问题的总结归纳
 
 ## 我的开源
 - [go-util-package](https://github.com/Roc-zhou/go-util-package) Go 常用方法封装（微信的签名、加密解密、时间、发送邮件等）✊
