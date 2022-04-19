@@ -7,6 +7,7 @@
     * [如何用一行代码实现网页变灰效果？](css/网页变灰 "如何用一行代码实现网页变灰效果？")
   * javascript
     * [简单理解浅拷贝和深拷贝](js/简单理解浅拷贝和深拷贝 "简单理解浅拷贝和深拷贝")
+    * [记录](js/记录 "记录")
     * [最常用数组去重方法](js/最常用数组去重方法 "最常用数组去重方法")
     * [浅谈sessionStorage、localStorage、cookie的区别](js/浏览器存储方式 "浅谈sessionStorage、localStorage、cookie的区别")
   * vue
