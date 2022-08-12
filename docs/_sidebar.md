@@ -23,6 +23,7 @@
 * Git记录
   * [git命令记录](git/git命令记录.md)
   * [Git的使用以及操作](git/Git的使用以及操作.md)
+  * [配置 husky+lint-staged](git/%E9%85%8D%E7%BD%AE%20husky%2Blint-staged.md)
 * [Mac下使用docker安装nginx并打开html](other/Mac下使用docker安装nginx并打开html "Mac下使用docker安装nginx并打开html")
 * [scp服务器传输文件](other/scp服务器传输文件 "scp服务器传输文件")
 * [服务器中使用shell脚本运行二进制程序-GO](other/服务器中使用shell脚本运行二进制程序-GO "服务器中使用shell脚本运行二进制程序-GO")
